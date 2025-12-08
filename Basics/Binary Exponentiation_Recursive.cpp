@@ -5,7 +5,7 @@ const int M = 1e9 + 7;
 
 int power(int a, int b) { // O(log n)
 
-    if (b == 1) return a;
+    if (b == 1) return a % M;
 
     int res = power(a, b/2);
 
